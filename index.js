@@ -13,9 +13,7 @@ form.addEventListener('submit', function(event) {
     const expenseKey = `expense_${Date.now()}`;
 
     const newLi = document.createElement('li');
-    newLi.innerHTML = `<span class="bold">${amount}</span> - 
-                     <span class="bold">${choosedescription} </span> - 
-                     <span class="bold">${choosecategory}</span>
+    newLi.innerHTML = `<span class="bold">${amount}</span> - ${choosedescription} - ${choosecategory}
                        <button class="delete-btn">Delete</button>
                        <button class="edit-btn">Edit</button>`;
 
