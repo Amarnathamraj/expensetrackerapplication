@@ -1,4 +1,4 @@
-const form = document.querySelector('form');
+const form = document.querySelector('#expenseform');
 
 form.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -19,6 +19,7 @@ form.addEventListener('submit', function(event) {
 
     const userList = document.querySelector('#userlist');
     userList.appendChild(newLi);
+    newLi.style.marginBottom="10px";
 
     amountInput.value = '';
     descriptionInput.value = '';
