@@ -9,26 +9,27 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body style="background-color:lightgoldenrodyellow;">
    
     <div class="container">
+        <h1 style="color:black;text-align:center;font-size:250%; margin-bottom:30px;">Expense tracker</h1>
         <form id="expenseform">
-        <div class="row g-3 align-items-center">
-            <div class="col">
-        <label for="text" class="form-label">Amount</label>
-    <div class="input-group">
-        <div class="input-group-text">rupee</div>
-        <input type="number" id="text" class="form-control"/> 
+        <div class="row align-items-center">
+  <div class="col">
+           <label for="text" class="form-label" style="font-weight:bold;padding:5px">Amount</label>
+        <div class="input-group">
+            <div class="input-group-text" style="color:blue;">rupee</div>
+            <input type="number" id="text" class="form-control"/> 
         <div class="input-group-text">.00</div>
-        </div>
-         </div>
-         <div class="col">
-          <label for="des" class="form-label">choosedescription:</label>
+             </div>
+             </div>
+    <div class="col">
+          <label for="des" class="form-label" style="font-weight:bold;padding:5px">choosedescription:</label>
           <input type="text" id="des" class="form-control ">
           </div>
-          <div class="col">
-           <label for="category" class="form-label">
-            chooseacategory</label>
+    <div class="col">
+           <label for="category" class="form-label" style="font-weight:bold;padding:5px">
+            choose a category</label>
            <select id="category" class="form-select">
             <option>movie</option>
             <option>fuel</option>
@@ -43,7 +44,7 @@
     </form>              
     </div>
   
-    <ul id="userlist"></ul>
+    <ul id="userlist" style="margin-top:30px;"></ul>
 
 <script src="index.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
